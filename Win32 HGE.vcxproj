@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{287F3351-787D-4CBE-B569-23956B88E967}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Win32HGE</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(ProjectDir);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>hge.lib;hgehelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AudioResource.h" />
+    <ClInclude Include="Bird.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Broadcaster.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="CollisionDetector.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="FontResource.h" />
+    <ClInclude Include="GameAppFramework.h" />
+    <ClInclude Include="GameBackground.h" />
+    <ClInclude Include="GameRunning.h" />
+    <ClInclude Include="GameStateManager.h" />
+    <ClInclude Include="Hurdles.h" />
+    <ClInclude Include="IEvent.h" />
+    <ClInclude Include="IGameState.h" />
+    <ClInclude Include="IListner.h" />
+    <ClInclude Include="ImageResource.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IObject.h" />
+    <ClInclude Include="IResource.h" />
+    <ClInclude Include="KeyEvent.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="LoadingState.h" />
+    <ClInclude Include="LoadResourceEvent.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MouseEvent.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="precompiled.h" />
+    <ClInclude Include="ResourceTracker.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StatechangeEvent.h" />
+    <ClInclude Include="StateIdentifier.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="wall.h" />
+    <ClInclude Include="WorldManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AudioResource.cpp" />
+    <ClCompile Include="Bird.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Broadcaster.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="CollisionDetector.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FontResource.cpp" />
+    <ClCompile Include="GameAppFramework.cpp" />
+    <ClCompile Include="Gamebackground.cpp" />
+    <ClCompile Include="GameRunning.cpp" />
+    <ClCompile Include="GameStateManager.cpp" />
+    <ClCompile Include="Hurdles.cpp" />
+    <ClCompile Include="IEvent.cpp" />
+    <ClCompile Include="IEvents.cpp" />
+    <ClCompile Include="ImageResource.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IObject.cpp" />
+    <ClCompile Include="IResource.cpp" />
+    <ClCompile Include="KeyEvent.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="LoadingState.cpp" />
+    <ClCompile Include="LoadResourceEvent.cpp" />
+    <ClCompile Include="MainFile.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MouseEvent.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceTracker.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StateChangeEvent.cpp" />
+    <ClCompile Include="StateIdentifier.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="WordManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

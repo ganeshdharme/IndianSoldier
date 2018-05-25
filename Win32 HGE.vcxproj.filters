@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{30d492c9-8a50-4e35-b298-b5f7a5c15a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\GameStates">
+      <UniqueIdentifier>{bc865c63-cf1b-4fcc-86dd-1c2afc0994e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Broadcaster">
+      <UniqueIdentifier>{6cdd5e2c-da00-4dda-b36a-ac3105c6b3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{d5f89767-e292-419d-999e-028236f00e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\GameStates">
+      <UniqueIdentifier>{5b5b4764-ad3c-412c-a2cf-a86b49e0d497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Broadcaster">
+      <UniqueIdentifier>{6495b1f6-f735-4a5d-b77d-4e10a9104a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Broadcaster\Events">
+      <UniqueIdentifier>{2104428b-d842-4980-af2f-70414758cdc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Broadcaster\Events">
+      <UniqueIdentifier>{3d71a7a0-9d74-4b9e-b37d-818d404f504d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GamePlay">
+      <UniqueIdentifier>{42ec3523-631e-4471-8b8e-effa543a8a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GamePlay">
+      <UniqueIdentifier>{083809e3-bb75-470f-89b4-70f4d00ce6d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ResourceManager">
+      <UniqueIdentifier>{da4490ea-3934-42f9-a08f-c3753cde6e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\ResourceManager">
+      <UniqueIdentifier>{baf96e17-dc4b-4182-b816-a2295bcc7102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\EventMnagaer">
+      <UniqueIdentifier>{9a797436-228c-42f8-a96b-d1b6643f84d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\EventManager">
+      <UniqueIdentifier>{1419b1dc-4ce8-4dc7-9020-eb0de5f7bd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Animation">
+      <UniqueIdentifier>{ec5c980b-ef96-4ed9-bc2d-4139608246b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Animation">
+      <UniqueIdentifier>{6ffe68ea-69dd-4c65-99ca-dc2b441a5d8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StateIdentifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Broadcaster.h">
+      <Filter>Header Files\Engine\Broadcaster</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRunning.h">
+      <Filter>Header Files\Engine\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\Engine\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAppFramework.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBackground.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Hurdles.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="IEvent.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEvent.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvent.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="precompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameState.h">
+      <Filter>Header Files\Engine\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="IListner.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\Engine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceTracker.h">
+      <Filter>Header Files\Engine\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IResource.h">
+      <Filter>Header Files\Engine\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageResource.h">
+      <Filter>Header Files\Engine\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioResource.h">
+      <Filter>Header Files\Engine\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingState.h">
+      <Filter>Header Files\Engine\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="StatechangeEvent.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadResourceEvent.h">
+      <Filter>Header Files\Engine\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldManager.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="FontResource.h">
+      <Filter>Header Files\Engine\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rock.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="wall.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Bird.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetector.h">
+      <Filter>Header Files\GamePlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameAppFramework.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\Engine\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRunning.cpp">
+      <Filter>Source Files\Engine\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="StateIdentifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="precompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamebackground.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Hurdles.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Broadcaster.cpp">
+      <Filter>Source Files\Engine\Broadcaster</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEvent.cpp">
+      <Filter>Source Files\Engine\EventMnagaer</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp">
+      <Filter>Source Files\Engine\EventMnagaer</Filter>
+    </ClCompile>
+    <ClCompile Include="IEvent.cpp">
+      <Filter>Source Files\Engine\EventMnagaer</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Engine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceTracker.cpp">
+      <Filter>Source Files\Engine\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioResource.cpp">
+      <Filter>Source Files\Engine\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageResource.cpp">
+      <Filter>Source Files\Engine\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingState.cpp">
+      <Filter>Source Files\Engine\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="IEvents.cpp">
+      <Filter>Source Files\Engine\Broadcaster\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="IResource.cpp">
+      <Filter>Source Files\Engine\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="StateChangeEvent.cpp">
+      <Filter>Source Files\Engine\EventMnagaer</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadResourceEvent.cpp">
+      <Filter>Source Files\Engine\EventMnagaer</Filter>
+    </ClCompile>
+    <ClCompile Include="IObject.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="WordManager.cpp">
+      <Filter>Source Files\Engine\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="FontResource.cpp">
+      <Filter>Source Files\Engine\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rock.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Bird.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetector.cpp">
+      <Filter>Source Files\GamePlay</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
